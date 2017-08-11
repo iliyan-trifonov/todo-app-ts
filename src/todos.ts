@@ -15,9 +15,9 @@ export default class TODOS {
     public render = (): void => {
         this.listElem.innerHTML =
             this.todos
-                .map(function (todo: TODO) {
+                .map((todo: TODO): string => {
                     return this.generateLi(todo);
-                }.bind(this))
+                })
                 .join('');
     }
 
