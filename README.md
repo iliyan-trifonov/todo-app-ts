@@ -35,6 +35,9 @@ static-server dist/
 
 Open http://localhost:9080 and you'll see the app.
 
+Development
+---
+
 For continuous build while developing run(in 2 separate windows):
 
 ```bash
@@ -42,5 +45,5 @@ npm run watch
 ```
 
 ```bash
-static server dist/
+static-server dist/
 ```
