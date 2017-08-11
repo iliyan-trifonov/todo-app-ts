@@ -3,17 +3,16 @@ import TODO from './todo';
 export default class TODOS {
     private todos: TODO[];
     private listElem: HTMLUListElement;
-    
+
     public constructor(todos: TODO[], listElem: HTMLUListElement) {
         this.todos = todos;
         this.listElem = listElem;
     }
 
-    private generateLi(todo: TODO): string {
-        return `<li>${todo.getText()}</li>`;
-    }
+    private generateLi = (todo: TODO): string =>
+        `<li>${todo.getText()}</li>`;
 
-    public render(): void {
+    public render = (): void => {
         this.listElem.innerHTML =
             this.todos
                 .map(function (todo: TODO) {
@@ -22,7 +21,7 @@ export default class TODOS {
                 .join('');
     }
 
-    public addTodo(todo: TODO): void {
+    public addTodo = (todo: TODO): void => {
         this.todos.push(todo);
     }
 

@@ -6,10 +6,8 @@ const todoInput:HTMLInputElement = <HTMLInputElement>document.getElementById('to
 const todoBtn:HTMLButtonElement = <HTMLButtonElement>document.getElementById('todo-add-btn');
 const todos:TODOS = new TODOS([], listElem);
 
-function addTodo() {
+todoBtn.onclick = (): void => {
     todos.addTodo(new TODO(todoInput.value));
     todoInput.value = '';
     todos.render();
 }
-
-todoBtn.onclick = addTodo;
