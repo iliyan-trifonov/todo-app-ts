@@ -1,0 +1,26 @@
+{
+  "name": "todo-app-ts",
+  "version": "1.0.0",
+  "description": "TODO App written in Typescript",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": {
+    "name": "Iliyan Trifonov",
+    "email": "iliyan.trifonov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iliyan-trifonov/todo-app-ts.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.3"
+  }
+}
