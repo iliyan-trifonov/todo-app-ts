@@ -47,3 +47,5 @@ npm run watch
 ```bash
 static-server dist/
 ```
+
+You can use the .editorconfig provided to automatically configure your IDE for development of the source code here.
